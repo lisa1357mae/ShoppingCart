@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'user/first'
+
+  get 'user/last'
+
+  get 'user/email'
+
+  get 'user/password'
+
+  get 'startup/index'
+
   resources :line_items
   resources :carts
   root 'store#index', as: 'store_index'

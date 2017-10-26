@@ -10,3 +10,9 @@ Product.create ([
   {title: 'Guitar', description: 'Fender', image_url: 'https://pbs.twimg.com/profile_images/783743036043866112/XeOiqdgp.jpg', price: 200},
   {title: 'Piano', description: 'Steinway', image_url: 'http://steinway.co.uk/wp-content/uploads/2016/03/grand-piano.jpg', price: 200},
   {title: 'Drums', description: 'Pearl', image_url: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Pearl_drum_logo.png', price: 200}])
+
+  User.create([
+    {id:1, first: 'Lisa', last: 'Mae', email: 'lisamae', password: 'test'},
+    {id:2, first: 'Tom', last: 'Petty', email: 'tpetty', password: 'test'},
+    {id:3, first: 'Michael', last: 'Jackson', email: 'mj', password: 'test'}
+    ])
