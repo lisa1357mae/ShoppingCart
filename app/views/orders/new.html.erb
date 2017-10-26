@@ -1,0 +1,15 @@
+<h1>New Order</h1>
+
+<%= render 'form', order: @order %>
+
+<%= link_to 'Back', orders_path %>
+
+<!-- THis is the template for the form that captures a customer’s details
+for checkout -->
+
+<div class="shop_form">
+  <fieldset>
+    <legend>Please enter your details</legend>
+    <%= render 'form', order: @order %>
+  </fieldset>
+</div>
