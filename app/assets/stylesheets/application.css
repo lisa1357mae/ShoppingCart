@@ -15,3 +15,42 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.col-md-4 {
+  color: red;
+}
+
+
+
+.container {
+  background-color: orange;
+  text-align: center;
+}
+
+.section-heading {
+  color: black
+
+
+}
+.h2 {
+font-family: 'Contrail One', cursive;
+}
+
+
+.form-group  {
+  align-self:center;
+display: inline;
+
+}
+
+.form-control {
+display: inline;
+padding-right: 600px;
+}
+.contactForm {
+
+}
+
+* {
+  font-family:'Contrail One',cursive;"
+}
