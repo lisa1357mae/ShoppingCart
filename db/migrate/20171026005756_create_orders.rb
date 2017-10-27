@@ -4,13 +4,6 @@ class CreateOrders < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :address
       t.string :email
-      t.string :rails
-      t.string :generate
-      t.string :scaffold
-      t.string :Order
-      t.string :name
-      t.text :address
-      t.string :email
       t.integer :pay_type
 
       t.timestamps
