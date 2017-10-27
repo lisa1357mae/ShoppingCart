@@ -1,0 +1,13 @@
+
+
+<!-- THis is the template for the form that captures a customer’s details
+for checkout -->
+
+<div class="shop_form">
+  <fieldset>
+    <legend>Please enter your details</legend>
+    <%= render 'form', order: @order %>
+  </fieldset>
+</div>
+
+<%= link_to 'Back', orders_path %>
