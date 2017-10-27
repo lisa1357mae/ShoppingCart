@@ -2,11 +2,9 @@ class Order < ApplicationRecord
   # Ensures line items that belong to an order are to be destroyed
   # whenever the order is destroyed
   has_many :line_items, dependent: :destroy
-
-
-
   # Validate that payment information is submitted
   validates :name, :address, :email, presence: true
+  validates :pay_type, inclusion: pay_types.keys
 
 
   enum pay_type: {
