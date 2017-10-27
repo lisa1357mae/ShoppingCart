@@ -36,7 +36,6 @@
 font-family: 'Contrail One', cursive;
 }
 
-<<<<<<< HEAD
 
 .form-group  {
   align-self:center;
@@ -56,24 +55,6 @@ padding-right: 600px;
   font-family:'Contrail One',cursive;"
 }
 
-=======
->>>>>>> Lisa
-
-.form-group  {
-  align-self:center;
-display: inline;
-
-}
-
-.form-control {
-display: inline;
-padding-right: 600px;
-}
-.contactForm {
-
-}
-
-<<<<<<< HEAD
 .shop_form {
   fieldset {
     background: #efe;
@@ -104,8 +85,4 @@ form { label {
       display: none
     }
   }
-=======
-* {
-  font-family:'Contrail One',cursive;"
->>>>>>> Lisa
 }
