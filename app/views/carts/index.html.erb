@@ -14,7 +14,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
-        <h2 class="section-heading text-uppercase">Your Order</h2>
+        <h2 class="section-heading text-uppercase">Your Orders</h2>
       </div>
     </div>
 
@@ -24,8 +24,7 @@
 <!-- Portfolio Grid -->
 <section class="bg-light" id="portfolio">
   <div class="container">
-    <div class="row"><a class="btn btn-primary btn-l text-uppercase js-scroll-trigger" <%= link_to 'New Order', new_cart_path %></a>
-  </div>
+
   <div class="col-lg-12 text-center"></div>
 </div>
 </div>
@@ -35,19 +34,15 @@
 <section id="about">
 <div class="container">
 <div class="row">
-  <div class="col-lg-12 text-center">
-    <h2 class="section-heading text-uppercase">Past Orders</h2>
-  </div>
-</div>
-<div class="row">
   <div class="col-lg-12">
     <% @carts.each do |cart| %>
     <div class="timeline-panel">
       <table>
         <tbody>
           <tr>
-            <td><%= link_to 'View', cart %></td>
-            <td><%= button_to 'Delete', cart, method: :delete %></td>
+            <td id = "cart_id_cell"><%= cart.id %></td>
+            <td><%= button_to 'View', cart, class: "style" %></td>
+            <td><%= button_to 'Delete', cart, {method: :delete, class: "style"} %></td>
 
           </tr>
         </tbody>

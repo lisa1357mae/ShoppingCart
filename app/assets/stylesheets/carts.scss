@@ -1,3 +1,87 @@
 // Place all the styles related to the Carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cart_summary{
+  background-color: orange;
+}
+
+.style{
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 5px;
+
+}
+
+
+h1{
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 40px;
+  }
+
+table{
+  margin: auto;
+  tr,td,th {
+    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+  }
+}
+#cart_id_cell{
+  padding-right: 80px;
+}
+.checkout_button{
+  margin: 10px;
+  margin-left: 670px;
+}
+
+.delete_button{
+  margin-top: 90px;
+  margin-left: 680px;
+}
+
+#contact{
+  padding-top: 90px;
+}
+
+
+
+
+
+.cart_summary {
+  fieldset {
+    background: orange;
+    legend {
+      color: #dfd;
+      background: black;
+      font-family: 'Contrail One', cursive;;
+      padding: 0.2em 1em;
+      text-align: center;
+}
+    div {
+      margin-bottom: 0.3em;
+} }
+form {
+  align-items: center;
+  label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+}
+    select, textarea, input {
+      margin-left: 0.5em;
+}
+    .submit {
+      margin-left: 4em;
+}
+    br {
+      display: none
+    }
+  }
+}
