@@ -25,8 +25,18 @@
 
   <body class='<%= controller.controller_name %>'>
 
+<div class= "container" >
+  <% if notice %>
+  <div class="alert alert-success"><%= notice %></div>
+  <% end %>
+  <% if alert %>
+  <div class="alert alert-danger"><%=alert %></div>
+  <% end %>
 
 
+  </optgroup>
+
+  </optgroup>
     <%= yield %>
     <footer>
       <div class="container">

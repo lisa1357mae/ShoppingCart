@@ -12,7 +12,7 @@ Product.create ([
   {title: 'Drums', description: 'Pearl', image_url: 'https://upload.wikimedia.org/wikipedia/commons/e/ea/Pearl_drum_logo.png', price: 200}])
 
   User.create([
-    {id:1, first: 'Lisa', last: 'Mae', email: 'lisamae', password: 'test'},
-    {id:2, first: 'Tom', last: 'Petty', email: 'tpetty', password: 'test'},
-    {id:3, first: 'Michael', last: 'Jackson', email: 'mj', password: 'test'}
+    {id:1, first: 'Lisa', last: 'Mae', email: 'lisamae@example.com', password: 'test'},
+    {id:2, first: 'Tom', last: 'Petty', email: 'tpetty@example.com', password: 'test'},
+    {id:3, first: 'Michael', last: 'Jackson', email: 'mj@example.com', password: 'test'}
     ])

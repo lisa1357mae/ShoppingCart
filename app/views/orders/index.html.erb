@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+    <th>Name</th>
       <th>Address</th>
       <th>Email</th>
       <th>Pay type</th>
@@ -16,7 +16,9 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-        <td><%= order.Order %></td>
+
+<%= order.Order %>
+<tr>
         <td><%= order.name %></td>
         <td><%= order.address %></td>
         <td><%= order.email %></td>
