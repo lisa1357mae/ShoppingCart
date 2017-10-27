@@ -33,10 +33,6 @@ ActiveRecord::Schema.define(version: 20171026195518) do
     t.string "name"
     t.text "address"
     t.string "email"
-    t.string "rails"
-    t.string "generate"
-    t.string "scaffold"
-    t.string "Order"
     t.integer "pay_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
