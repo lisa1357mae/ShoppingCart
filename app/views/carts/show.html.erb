@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<h1> Your Cart</h1>
 
-<h2> Your Cart "ShopApp" </h2>
 <table>
   <%@cart.line_items.each do |item|%>
   <tr>
@@ -10,6 +10,7 @@
     <td class="item_price"><%= number_to_currency(item.total_price) %></td>
   </tr>
   <% end %>
+
   <tr class = "total_line">
     <td colspan="2">Total:</td>
     <td class="total_cell"><%= number_to_currency(@cart.total_price) %></td>
@@ -18,9 +19,8 @@
 
 </table>
 
-<%= button_to 'Check Out', new_order_path, method: :get%>
-
-<%= button_to 'Empty Cart', @cart, method: :delete, data: {confirm: "Are you sure?"} %>
+<%= button_to "Checkout", @new_order_path, method: :get %>
+<%= button_to 'Delete', @cart, method: :delete%>
 
 
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
