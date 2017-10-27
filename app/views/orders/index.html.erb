@@ -5,14 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>Email</th>
-      <th>Rails</th>
-      <th>Generate</th>
-      <th>Scaffold</th>
-      <th>Order</th>
-      <th>Name</th>
+    <th>Name</th>
       <th>Address</th>
       <th>Email</th>
       <th>Pay type</th>
@@ -23,13 +16,9 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-        <td><%= order.name %></td>
-        <td><%= order.address %></td>
-        <td><%= order.email %></td>
-        <td><%= order.rails %></td>
-        <td><%= order.generate %></td>
-        <td><%= order.scaffold %></td>
-        <td><%= order.Order %></td>
+
+<%= order.Order %>
+<tr>
         <td><%= order.name %></td>
         <td><%= order.address %></td>
         <td><%= order.email %></td>
