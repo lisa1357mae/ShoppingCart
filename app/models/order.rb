@@ -4,7 +4,11 @@ class Order < ApplicationRecord
   has_many :line_items, dependent: :destroy
   # Validate that payment information is submitted
   validates :name, :address, :email, presence: true
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 322602d6d665cf94cd226b4d5b11b40340726726
 
   enum pay_type: {
     "Pay-pal"  => 0,

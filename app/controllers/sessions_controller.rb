@@ -16,7 +16,7 @@ def create
 end
 
 def destroy
-  session[:user_id] = niil
+  session[:user_id] = nil
   redirect_to store_index_url, notice: "Log out successful!"
 end
 end
