@@ -4,59 +4,47 @@
     <title>ShopApp</title>
     <%= csrf_meta_tags %>
 
-
-       <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Bootstrap Custom CSS -->
 
-   <!-- Custom fonts for this template -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
 
-
-   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://blackrockdigital.github.io/startbootstrap-agency/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
-<<<<<<< HEAD
- <body class='<%= controller.controller_name %>'>
-=======
-  <body>
->>>>>>> 322602d6d665cf94cd226b4d5b11b40340726726
-<div class= "pull-right">
-  <% if current_user %>
-  <%= link_to 'Log Out', logout_path %>
-  <%else %>
-  <% link_to 'Log In', login_path %> or
-  <%= link_to 'Sign Up', signup_path %>
-  <% end %>
-</div>
+  <body class='<%= controller.controller_name %>'>
+    <div class="pull-right">
+      <% if current_user %>
+      <%= link_to 'Log Out', logout_path %>
+      <%else %>
+      <% link_to 'Log In', login_path %>
+      or
+      <%= link_to 'Sign Up', signup_path %>
+      <% end %>
+    </div>
 
-<<<<<<< HEAD
-   <%= yield %>
-
-   <footer>
-=======
     <%= yield %>
 
     <footer>
->>>>>>> 322602d6d665cf94cd226b4d5b11b40340726726
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <span class="copyright"></span>
           </div>
 
-
-           </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+      </ul>
+    </div>
+  </div>
+</div>
+</footer>
+</body>
 </html>

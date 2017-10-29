@@ -18,9 +18,8 @@
     <tr>
       <td><%= product.title %></td>
       <td><%= product.description %></td>
-      <td><%= product.image_url %></td>P
+      <td><%= product.image_url %></td>
       <td><%= product.price %></td>
-      <td><%= link_to 'Show', product %></td>
       <td><%= link_to 'Edit', edit_product_path(product) %></td>
       <td><%= link_to 'Destroy', product, method: :delete %></td>
       <td><%= button_to 'Add to Cart', line_items_path(product_id: product) %></td>
@@ -32,3 +31,23 @@
 <br>
 <!-- Move this to prfile page -->
 <%= link_to 'New Product', new_product_path %>
+
+<div class="xop-section">
+  <ul class="xop-grid">
+    <li>
+      <% @products.each do |product| %>
+      <div class="xop-box">
+        <span class="xop-img"><%= image_tag(product.image_url, :class => "stlye-img") %></span>
+        <div class="xop-info">
+          <h3><%= product.title %></h3>
+          <p><%= product.title %></p>
+          <p><%= link_to 'Show', product %></p>
+          <h3><%= product.price %></h3>
+        </div>
+        <div class="add_cart"><%= button_to 'Add to Cart', line_items_path(product_id: product) %></div>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+
+</div>
