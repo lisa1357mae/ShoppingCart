@@ -20,7 +20,13 @@
   color: red;
 }
 
+.showOrder{ color: red;}
 
+
+
+.pageheader {
+
+}
 
 .container {
   background-color: orange;
@@ -29,16 +35,15 @@
 
 .section-heading {
   color: black
-
-
 }
+
 .h2 {
 font-family: 'Contrail One', cursive;
 }
 
 
 .form-group  {
-  align-self:center;
+align-self:center;
 display: inline;
 
 }
@@ -47,27 +52,32 @@ display: inline;
 display: inline;
 padding-right: 600px;
 }
+
+
 .contactForm {
 
 }
 
 * {
-  font-family:'Contrail One',cursive;"
+  font-family:'Contrail One',cursive;
 }
 
 .shop_form {
-  fieldset {
-    background: #efe;
-    legend {
-      color: #dfd;
-      background: #141;
-      font-family: sans-serif;
-      padding: 0.2em 1em;
+background: #efe;
+color: #dfd;
+background: #141;
+padding: 0.2em 1em;
+text-align: left;
 }
-    div {
-      margin-bottom: 0.3em;
-} }
-form { label {
+
+
+
+.div {
+margin-bottom: 0.3em;
+}
+
+
+.label {
       width: 5em;
       float: left;
       text-align: right;
@@ -75,14 +85,21 @@ form { label {
       margin-right: 0.1em;
       display: block;
 }
-    select, textarea, input {
-      margin-left: 0.5em;
+
+.select {
+margin-left: 0.5em
+
 }
-    .submit {
-      margin-left: 4em;
+
+.textarea {
+
 }
-    br {
-      display: none
-    }
+.input {
+
+}
+.submit {
+margin-left: 4em;
+}
+.br {
+display: none
   }
-}
