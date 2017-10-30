@@ -1,4 +1,5 @@
 class Order < ApplicationRecord
+  belongs_to :user
   # Ensures line items that belong to an order are to be destroyed
   # whenever the order is destroyed
   has_many :line_items, dependent: :destroy

@@ -1,3 +1,93 @@
-// Place all the styles related to the Products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.xop-section {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 6% 2%;
+	background-color: red;
+}
+
+.xop-grid {
+	margin: 20px 0 0 0;
+	padding: 10px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after,
+.xop-box:before {
+	content: '';
+	display: table;
+}
+
+.xop-grid li {
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out,
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out,
+    transform 0.3s ease-in-out, ;
+    padding: 20px;
+    background-color: orange;
+    margin: 15px;
+}
+
+
+.stlye-img {
+  height: 10px;
+  width: 10px;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.10)
+    )
+}
+.xop-grid li {
+ width: 328px;
+ height: 328px;
+ display: inline-block;
+ margin: 20px;
+}
+
+.xop-box {
+ width: 100%;
+ height: 100%;
+ position: relative;
+ cursor: pointer;
+   border-radius: 10px;
+   -webkit-transition: 0.3s ease-in-out,
+   -webkit-transform 0.3s ease-in-out;
+ -moz-transition:  0.3s ease-in-out,
+   -moz-transform 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out,
+   transform 0.3s ease-in-out, ;
+}
+
+.xop-box:hover {
+ transform: scale(1.05);
+}
+
+
+// product/show/
+
+.product-image{
+	 padding: 20px;
+	 width: 10px;
+	 height: 10px;
+ }

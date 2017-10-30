@@ -1,24 +1,44 @@
 <p id="notice"><%= notice %></p>
+<!-- layout -->
 
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
+<div class="content-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="product-image">
+          <%= image_tag(@product.image_url, :class => "stlye-img") %>
+        </div>
+        <div class="product-information">
+          <h2>STANDARD TELECASTER</h2>
+          <p><%= @product.description %></p>
+          <p class="product-infos">
+            <span>Price: <%= @product.price %></span>
+          </p>
+          <ul class="product-buttons">
+            <div class="add_cart"><%= button_to 'Add to Cart',
+            line_items_path(product_id: @product) %></div>
+          </ul>
+        </div>
+        <!-- /.product-information -->
+      </div>
+      <!-- /.col-md-8 -->
+      <div class="col-md-4 col-sm-8">
+        <div class="product-item-2">
+          <strong>Comments: (<%=@product.comments.size%>)</strong>
+          <%= render partial: 'products/comment',
+          collection: @product.comments.reverse %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+          <%=render partial: 'comments/form' %>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+          <%= link_to 'Edit', edit_product_path(@product) %>
+          |
+          <%= link_to 'Back', products_path %>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+</body>
+</html>

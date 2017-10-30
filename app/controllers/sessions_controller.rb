@@ -12,7 +12,7 @@ def create
   else
     flash.now.alert = "Invalid email or password"
   render "new"
-end
+  end
 end
 
 def destroy
