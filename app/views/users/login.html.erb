@@ -1,33 +1,23 @@
-<% if @current_user %>
- 	<a href="/logout">Logout</a>
- <% else %>
- <h1 class= "section-heading" style="color:orange;font-size:500%;font-family:'Contrail One',cursive;">Login</h2>
- <form class="shopapp" method="POST" action="/login">
- 	<label>Email</label><input name="email" />
- 	<label>Password</label><input name="password" type="password" />
- 	<input type="submit" />
+<div class="page-header">
+  <h1>Log In </h1>
 
-  <br></br>
+</div>
 
-</form>
- <% end %>
+<div class="login">
+<%= form_tag sessions_path do %>
+<div class= "form-group">
+  <%= label_tag :Email %>
+  <%= email_field_tag :email, params[:email],
+  class: "form-control" %>
+</div>
 
- <html lang="en-US">
- <head>
-   <meta charset="utf-8">
-     <title>Login</title>
+<div class="form-group" >
+  <% label_tag :Password %>
+  <h1>Password</h1>
+  <%= password_field_tag :password, nil,
+  class: "form-control" %>
+</div>
 
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-
- </head>
-     <div id="login">
-       <form name='form-login'>
-         <span class="fontawesome-user"></span>
-           <input type="text" id="user" placeholder="Username">
-
-         <span class="fontawesome-lock"></span>
-           <input type="password" id"pass" placeholder="Password">
-
-         <input type="submit" value="Login">
-
- </form>
+<%= submit_tag "Log In", class: "btn btn-primary" %>
+<% end %>
+</div>

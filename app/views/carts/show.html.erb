@@ -9,6 +9,7 @@
       <td><%= item.product.title %></td>
       <td class="item_price"><%= number_to_currency(item.total_price) %></td>
     </tr>
+    </div>
     <% end %>
 
     <tr class="total_line">
@@ -25,7 +26,6 @@
   <%= button_to 'Delete', cart_path(@cart), method: :delete %>
 
   <%= link_to 'Edit', edit_cart_path(@cart) %>
-  |
-  <%= link_to 'Back', carts_path %>
+
+  <%= link_to 'Back', products_path %>
   </div>
-</div>
