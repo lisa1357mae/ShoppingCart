@@ -32,11 +32,11 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     # adds into this order the items that are already stored in the cart
     @order.add_line_items_from_cart(@cart)
-
+    @order.user_id = current_user.id
     respond_to do |format|
       # If the save succeeds: 1 ready next order by deleting the cart from the session.
       # 2. Redisplay the catalog
-      if @order.save
+      if @order.save!
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         format.html { redirect_to store_index_url, notice: 'Thank you for your order!' }
@@ -87,6 +87,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:name, :address, :email, :rails, :generate, :scaffold, :Order, :name, :address, :email, :pay_type)
+      params.require(:order).permit(:Order, :name, :address, :email, :pay_type)
     end
 end
