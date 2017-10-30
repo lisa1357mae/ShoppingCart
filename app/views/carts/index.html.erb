@@ -1,53 +1,35 @@
 <p id="notice"><%= notice %></p>
 <!-- Header -->
-<header class="masthead">
-  <div class="container">
-    <div class="intro-text">
-      <div class="intro-lead-in">Your Account > Your orders</div>
-    </div>
-  </div>
-</header>
 
-<!-- Services -->
+
+
 <section id="services">
   <div class="container">
-    <div class="row">
+
       <div class="col-lg-12 text-center">
         <i class="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
-        <h2 class="section-heading text-uppercase">Your Orders</h2>
-      </div>
+
+  <h1 class= "section-heading" style="color:orange;font-size:400%;font-family:'Contrail One',cursive;">Your Orders</h1>
     </div>
 
   </div>
-</section>
 
-<!-- Portfolio Grid -->
-<section class="bg-light" id="portfolio">
-  <div class="container">
 
-  <div class="col-lg-12 text-center"></div>
-</div>
-</div>
-</section>
+
 
 <!-- About -->
+
 <section id="about">
+    <div class="timeline-panel">
 <div class="container">
 <div class="row">
   <div class="col-lg-12">
     <% @carts.each do |cart| %>
-    <div class="timeline-panel">
-      <table>
-        <tbody>
-          <tr>
-            <td id = "cart_id_cell"><%= cart.id %></td>
-            <td><%= button_to 'View', cart, class: "style" %></td>
-            <td><%= button_to 'Delete', cart, {method: :delete, class: "style"} %></td>
+<td id = "cart_id_cell"><%= cart.id %></td>
+<td><%= button_to 'View', cart, class: "style" %></td>
+<td><%= button_to 'Delete', cart, {method: :delete, class: "style"} %></td>
+<% end %>
 
-          </tr>
-        </tbody>
-        <% end %>
-      </table>
     </div>
   </div>
 </div>

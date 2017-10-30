@@ -1,6 +1,8 @@
 // Place all the styles related to the Store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
 .carts {
   .item_price, .total_line {
     text-align: left;
@@ -11,3 +13,101 @@
     border-top: 1px solid black;
   }
 }
+
+
+.col-md-4 {
+  color: red;
+}
+
+.showOrder {
+  color: red;
+}
+
+.h1 {
+
+color:orange;
+font-size:500%;
+font-family:'Contrail One',cursive;
+
+}
+
+.pageheader {
+}
+
+
+.container {
+  background-color: orange;
+  text-align: center;
+}
+
+.section-heading {
+color: black
+}
+
+.h2 {
+font-family: 'Contrail One', cursive;
+}
+
+
+.form-group  {
+  align-self:center;
+  display: inline;
+
+}
+
+.form-control {
+display: inline;
+padding-right: 600px;
+}
+
+
+* {
+  font-family:'Contrail One',cursive;
+
+}
+
+.shop_form {
+background: #efe;
+color: #dfd;
+background: #141;
+padding: 0.2em 1em;
+text-align: left;
+}
+
+#login  {
+padding-right: 300px;
+text-align: center;
+background-color:red;
+}
+
+.div {
+margin-bottom: 0.3em;
+}
+
+
+.label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+}
+
+.select {
+margin-left: 0.5em
+
+}
+
+.textarea {
+
+}
+.input {
+
+}
+.submit {
+margin-left: 4em;
+}
+.br {
+display: none
+  }
