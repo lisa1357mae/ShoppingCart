@@ -8,5 +8,7 @@ Product.create ([
   User.create([
     {id:1, first: 'Lisa', last: 'Mae', email: 'lisamae@example.com', password: 'test'},
     {id:2, first: 'Tom', last: 'Petty', email: 'tpetty@example.com', password: 'test'},
-    {id:3, first: 'Michael', last: 'Jackson', email: 'mj@example.com', password: 'test'}
+    {id:3, first: 'Michael', last: 'Jackson', email: 'mj@example.com', password: 'test'},
+    {id:4, first: 'Orange', last: 'Kat', email: 'oc@example.com', password: 'test'},
+    {id:5, first: 'Red', last: 'Dog', email: 'rd@example.com', password: 'test'}
     ])

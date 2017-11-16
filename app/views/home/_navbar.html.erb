@@ -1,0 +1,12 @@
+
+<ul>
+	  <li><a class="active" href="/">HOME</a></li>
+	  <li><a href="/login">LOGIN</a></li>
+    <li><a href="/signup">SIGN UP</a></li>
+    <li><a href="/products">SHOP</a></li>
+    <li><a href="/carts">CART</a></li>
+	  <% if
+	  !@current_company %>
+	  	<li><a href="/logout">LOGOUT</a></li>
+	  <% end %>
+</ul>

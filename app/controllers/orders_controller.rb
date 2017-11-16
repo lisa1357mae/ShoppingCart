@@ -32,6 +32,7 @@ class OrdersController < ApplicationController
     @order = Order.new(order_params)
     # adds into this order the items that are already stored in the cart
     @order.add_line_items_from_cart(@cart)
+    @order.user_id = current_user.id
 
     respond_to do |format|
       # If the save succeeds: 1 ready next order by deleting the cart from the session.
