@@ -11,10 +11,6 @@ def add_product(product)
   current_item
 end
 
-def total_price
-line_items.to_a.sum { |item| item.total_price }
-end
-
 # Method to sum the total price for all the products in the cart
 # this method is tied to the one in the line_item models need both.
 def total_price
