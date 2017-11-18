@@ -35,12 +35,12 @@ li a {
 }
 
 li a:hover:not(.active) {
-   background-color: brown;
+   background-color: orange;
 }
 
 li a.active {
    color: white;
-   background-color: brown;
+   background-color: orange;
 }
 
 
