@@ -2,7 +2,6 @@
 <!-- layout -->
 
 <div class="content-section">
-  <div class="container">
     <div class="row">
       <div class="col-md-8">
         <div class="product-image">
@@ -22,7 +21,7 @@
         <!-- /.product-information -->
       </div>
       <!-- /.col-md-8 -->
-      <div class="col-md-4 col-sm-8">
+
         <div class="product-item-2">
           <strong>Comments: (<%=@product.comments.size%>)</strong>
           <%= render partial: 'products/comment',
@@ -35,9 +34,9 @@
           <%= link_to 'Back', products_path %>
 
         </div>
-      </div>
+
     </div>
-  </div>
+
 </div>
 
 </body>

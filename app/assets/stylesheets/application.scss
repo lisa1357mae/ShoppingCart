@@ -74,9 +74,9 @@ font-family:'Contrail One',cursive;
 }
 
 .container {
-  background-color: orange;
-  text-align: center;
-  box-sizing: 200px;
+ background-color: black;
+  //text-align: center;
+  //box-sizing: 200px;
 }
 
 .section-heading {
@@ -376,6 +376,9 @@ display: none
      height: 50px;
    }
 
+.row {
+  background-color: 'black';
+}
    #login form input[type="submit"] {
      background: #b5cd60;
      border: 0;

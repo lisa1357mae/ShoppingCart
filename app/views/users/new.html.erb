@@ -1,5 +1,7 @@
 <div class= "page-header">
+     <div style="height: 40px; width: 150px; margin-bottom: 5px">
   <h1 class= "section-heading" style="color:orange;font-size:500%;font-family:'Contrail One',cursive;">Sign Up</h1>
+</div>
 </div>
 
 <%= form_for(@user) do |f| %>
@@ -20,20 +22,28 @@
 <% end %>
 
     <div class="form-group">
+         <div style=" padding-left: 10px;align-content: 'center';font-size: 16px; height: 40px; width: 150px; margin-bottom: 15px">
       <%= f.label :email %>
       <%= f.email_field :email, class: "form-control" %>
     </div>
+  </div>
 
     <div class="form-group">
+         <div style=" padding-left: 10px; align-content: 'center';font-size: 16px;height: 40px; width: 150px; margin-bottom: 15px">
       <%= f.label :password %>
       <%= f.password_field :password, class: "form-control" %>
     </div>
+  </div>
 
     <div class="form-group">
+         <div style=" padding-top: 10px; padding-left: 10px;align-content: 'center';font-size: 16px;height: 40px; width: 150px; margin-bottom: 80px">
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, class: "form-control" %>
     </div>
+  </div>
 
-
+<br />
+<br />
     <%= f.submit class: "btn btn-primary" %>
+
     <% end %>
